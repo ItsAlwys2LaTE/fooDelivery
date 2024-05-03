@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMWEB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            font-family: 'Reddit Mono';
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        nav {
+            overflow: auto;
+            background-color: white;
+            border-bottom: 2px solid black;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            overflow: auto;
+            float: right;
+            width: 1049px;
+        }
+
+        nav img {
+            float: left;
+            height: 105px;
+            width: 105px;
+            padding-left: 30px;
+        }
+
+        nav p {
+            display: inline-block;
+            margin: 21px;
+            margin-left: 8px;
+            font-size: 50px;
+            font-weight: 780;
+            letter-spacing: 3px;
+            margin-right: 0px;
+        }
+
+        nav p:hover {
+            transition: 0.5s;
+            color: #2196f3;
+            cursor: default;
+        }
+
+        li {
+            list-style: none;
+            margin: 0px;
+            font-size: 40px;
+        }
+
+        nav a {
+            float: right;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2196f3;
+            padding: 27px;
+        }
+
+        nav a:hover {
+            transition: 0.5s;
+            color: white;
+            background-color: #2196f3;
+        }
+
+        .main {
+            overflow: auto;
+        }
+
+        .p1 {
+            box-sizing: border-box;
+            float: left;
+            padding-left: 120px;
+            padding-top: 85px;
+            width: 940px;
+            height: 886px;
+            font-size: 0px;
+        }
+
+        .p1 p {
+            color: #2196f3;
+            font-size: 140px;
+            margin: 0px;
+            padding-left: 13px;
+            letter-spacing: 15px;
+            font-weight: 800;
+            padding-right: 20px;
+
+        }
+
+        .join {
+            font: 45px 'Reddit Mono';
+            font-weight: bold;
+            padding: 18px;
+            color: #2196f3;
+            background-color: aliceblue;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 65px;
+        }
+
+        .join:hover {
+            transition: 0.5s;
+            background-color: #2196f3;
+            color: black;
+        }
+
+        .main img {
+            float: right;
+        }
+
+        .rev {
+            background-color: aliceblue;
+            overflow: auto;
+            padding: 10px;
+            padding-bottom: 25px;
+            font-size: 0px;
+        }
+
+        .p2 {
+            font-size: 45px;
+            font-weight: 600;
+            width: 1442.81px;
+            margin: 20px auto;
+            margin-bottom: 0px;
+            color: #2196f3;
+            padding-bottom: 7px;
+        }
+
+        .p3 {
+            font-size: 45px;
+            font-weight: 600;
+            width: 355px;
+            margin: 0px auto;
+            border-top: 3px solid black;
+            color: #2196f3;
+            padding: 7px 80px;
+        }
+
+        .p4 {
+            font-size: 38px;
+            font-weight: 530;
+            margin: 20px 30px;
+            margin-top: 43px;
+            display: inline-block;
+        }
+
+        .revbox {
+            padding: 20px;
+            width: 1839px;
+            margin: 0px auto;
+        }
+
+        .rev1 {
+            border: 3px solid black;
+            border-radius: 40px;
+            overflow: auto;
+            padding: 20px;
+            display: inline-block;
+            width: 413px;
+            margin: 0px 77px;
+        }
+
+        .revbox img {
+            border: 2px solid black;
+            height: 54px;
+            width: 54px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .name {
+            font-size: 25px;
+            margin: 13px;
+            margin-left: 12px;
+            color: #2196f3;
+            font-weight: 500;
+            float: left;
+        }
+
+        .cont {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-weight: 530;
+        }
+
+        .fot {
+            font-size: 0px;
+            border: 1px solid black;
+            overflow: auto;
+            width: 489px;
+            padding: 55px;
+            padding-left: 100px;
+            float: left;
+        }
+
+        .fot img {
+
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .p5 {
+
+            float: left;
+            font-size: 103px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 32px;
+            padding-left: 15px;
+            margin: 0px;
+            color: white;
+        }
+
+        .p5:hover {
+            transition: 0.5s;
+            color: #2196f3;
+            cursor: default;
+        }
+
+        .det1 {
+            float: right;
+            width: 906px;
+
+            font-size: 35px;
+            font-weight: 700;
+            color: #2196f3;
+            padding: 0px 25px;
+            overflow: auto;
+            margin-bottom: 0px;
+            margin-right: 60px;
+            margin-top: 23px;
+        }
+
+        .det2 {
+            float: right;
+            width: 906px;
+
+            font-size: 35px;
+            font-weight: 700;
+            color: #2196f3;
+            padding: 0px 25px;
+            overflow: auto;
+            margin-top: 0px;
+            margin-right: 60px;
+            margin-bottom: 23px;
+        }
+
+        .det1 p {
+            margin: 0px;
+        }
+
+        .det2 p {
+            margin-bottom: 0px;
+        }
+
+        .p6 {
+            float: left;
+            padding-right: 16px;
+        }
+
+        .p7 {
+            color: aliceblue;
+            font-weight: 550;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navi">
+        <nav>
+            <img src="https://static.vecteezy.com/system/resources/previews/027/172/234/non_2x/lion-high-quality-logo-illustration-ideal-for-t-shirt-graphic-vector.jpg"
+                alt="logo">
+            <p>GYM&trade;</p>
+            <ul>
+                <li><a href="#support">SUPPORT</a></li>
+                <li><a href="#equipments">EQUIPMENTS</a></li>
+                <li><a href="#staff">PRODUCTS</a></li>
+                <li><a href="#membership">MEMEMBERSHIP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="p1">
+            <p style="width: 557px;">HUSTLE</p>
+            <p style="display: inline-block;">FOR</p>
+            <p style="display: inline-block; margin-left: 15px;">THAT</p>
+            <p style="width: 557px;">MUSCLE</p>
+            <a href="#signin" class="join">JOIN NOW</a>
+        </div>
+        <img src="https://lh3.googleusercontent.com/d/1-OLBLwUhHKrssXMa6MYsZzTuymGWK9LW" alt="image">
+    </div>
+    <div class="rev">
+        <p class="p2">BEST-IN-CLASS FACILITIES AND HIGHLY TRAINED PROFESSIONALS</p>
+        <p class="p3">NOW IN LUCKNOW</p>
+        <p class="p4">What our customers say -</p>
+        <div class="revbox">
+            <div class="rev1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMY08LXM8mXSsVQd2XJ-DACEyL-k40OnQiHdCm9B6rw&s"
+                    alt="image1">
+                <p class="name">ADITYA VERMA</p>
+                <p class="cont">"Exceptional facility! The equipment is top-notch, the atmosphere motivating, and the
+                    trainers are knowledgeable and supportive. Achieved great gains in strength and muscle definition
+                    thanks to this fantastic gym!"</p>
+            </div>
+            <div class="rev1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRumGctLdcWG3wrGIk_XfFiPI7bf19OqROwP161RrKiUQ&s"
+                    alt="image1">
+                <p class="name">ARJUN TIWARI</p>
+                <p class="cont">"Outstanding gym! The variety of equipment caters to all muscle groups. Clean
+                    environment, friendly staff, and inspiring ambiance make every workout enjoyable. Highly recommend
+                    for anyone serious about fitness!"</p>
+            </div>
+            <div class="rev1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWm5ge4bYHNplOn6_gAMXjzoZUFqcjayA8JlfJGO58w&s"
+                    alt="image1">
+                <p class="name">VIKRAM YADAV</p>
+                <p class="cont">"Incredible experience! This gym embodies dedication and excellence. From the
+                    well-maintained equipment to the expert guidance, it's a haven for fitness enthusiasts. I've seen
+                    remarkable progress since joining. Definitely worth it!"</p>
+            </div>
+        </div>
+    </div>
+    <div style="overflow: auto;">
+        <div class="fot">
+            <img
+                src="https://static.vecteezy.com/system/resources/previews/027/172/234/non_2x/lion-high-quality-logo-illustration-ideal-for-t-shirt-graphic-vector.jpg">
+            <p class="p5">GYM&trade;</p>
+        </div>
+        <div class="det1">
+            <p>Cancer Aid Society, Hall no.4, opp. Lohia park<br>Lucknow<br>Uttar Pradesh 226003</p>
+        </div>
+        <div class="det2">
+            <p class="p6">Phone -<br>Email -</p>
+            <p class="p7">8982148892<br>lionsgymup@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
