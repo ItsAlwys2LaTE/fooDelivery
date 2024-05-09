@@ -1,0 +1,402 @@
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.374);
+  font-family: "Josefin Sans";
+}
+
+header {
+  width: 100%;
+  min-width: 1650px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  z-index: 5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  min-width: fit-content;
+
+  box-shadow: 0 0 5px black;
+}
+
+.cont1 {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  width: fit-content;
+  margin-right: 4em;
+}
+
+.logo {
+  height: 6em;
+}
+
+.comp-name {
+  font: 2.4em "Poetsen One";
+}
+
+.comp-name > span {
+  font-size: 1.2em;
+  color: #ff7f00;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: 2.5em;
+
+  min-width: max-content;
+}
+
+nav li {
+  padding-top: 0.2em;
+  font-weight: 500;
+}
+
+nav li:hover {
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+}
+
+nav > ul > li > a:hover {
+  transition: 0.2s;
+  color: #ff7f00;
+}
+
+.cont2 {
+  display: flex;
+  width: 387.179px;
+  height: 60px;
+
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+i {
+  animation: zoom-in 0.3s ease 0s 1 normal forwards;
+}
+
+i:hover {
+  transition: 0.3s;
+  color: #ff7f00;
+
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+span:hover {
+  transition: 0.2s;
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+  padding: 5px;
+  font-weight: 800;
+  animation: zoom-in 0.3s ease 0s 1 normal forwards;
+}
+
+.material-symbols-outlined:hover {
+  transition: 0.3s;
+  color: #ff7f00;
+
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+}
+
+.location {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1.1em 0;
+  border: 2px solid black;
+  min-width: 1650px;
+}
+
+.location > p {
+  margin: 0;
+  font-size: 3em;
+}
+
+.location > input {
+  width: 7.1em;
+  height: 1.2em;
+  font: 2.7em "Josefin Sans";
+  padding: 0 0.5em;
+  border: 0px;
+  border-bottom: 4px solid black;
+}
+
+.suggestion {
+  background-color: rgb(251, 237, 219);
+  padding-bottom: 0.5em;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  box-shadow: 0 1.5px 4px black;
+  position: relative;
+  z-index: 4;
+  min-width: 1650px;
+}
+
+.suggestion > p {
+  text-align: center;
+  font-size: 3.8em;
+  font-weight: 580;
+  margin-top: 0;
+  padding-top: 0.6em;
+  margin-bottom: 0.6em;
+  min-width: max-content;
+}
+
+.suggestion-list {
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 16em;
+  height: 16em;
+  box-shadow: 0 0 7px 1px black;
+  border-radius: 50%;
+  object-fit: cover;
+
+  animation: zoom-in 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.item img:hover {
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+  box-shadow: 0 0 15px black;
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.item > p {
+  font-size: 2.7em;
+  margin: 0.7em;
+  cursor: default;
+}
+
+.veg {
+  background-color: green;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+}
+
+.non-veg {
+  background-color: red;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+}
+
+.restaurent {
+  z-index: 2;
+  background-color: rgb(249, 239, 226);
+  padding-top: 2em;
+  padding-bottom: 4em;
+  position: relative;
+  top: -3em;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  box-shadow: 0 1.5px 4px black;
+  min-width: 1650px;
+}
+
+.restaurent > p {
+  font-size: 3.8em;
+  font-weight: 580;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+
+.resto {
+  border-radius: 2em;
+  width: max-content;
+  min-width: fit-content;
+  height: fit-content;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 0 0 1.3em black;
+  position: relative;
+
+  animation: zoom-in 0.3s ease 0s 1 normal forwards;
+}
+
+.resto:hover {
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+  box-shadow: 0 0 2.3em black;
+}
+
+.resto img {
+  width: 35em;
+  height: 15em;
+  object-fit: cover;
+}
+
+.resto > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 1.2em;
+}
+
+.resto > div > p {
+  font-size: 2.6em;
+  margin: 0;
+  font-weight: 500;
+}
+
+.resto > div > div {
+  display: flex;
+  width: fit-content;
+  gap: 0.6em;
+}
+
+.address {
+  font-size: 1.8em;
+  margin: 0 0.7em;
+  color: rgb(100, 98, 98);
+}
+
+.dl {
+  font-size: 1.8em;
+  margin: 0.3em 0.7em;
+  margin-bottom: 0.7em;
+  color: rgb(100, 98, 98);
+}
+
+#rating {
+  font: 1.4em "Segoe UI";
+  font-weight: 600;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0 0 0.1em black;
+  padding: 0.3em 0.4em;
+  margin: 0;
+  width: fit-content;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+footer {
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 8em 0em;
+  padding-bottom: 5em;
+  position: relative;
+  top: -6em;
+  background-color: white;
+  min-width: 1650px;
+}
+
+footer .logo {
+  height: 11em;
+}
+
+footer .comp-name {
+  font-size: 3.3em;
+}
+
+.legal {
+  font-size: 2.5em;
+  margin: 0.4em 0;
+  padding-left: 0.3em;
+}
+
+.info {
+  width: 40em;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  font-size: 2.7em;
+  font-weight: 600;
+}
+
+footer ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0;
+}
+
+footer li {
+  font-size: 2em;
+  margin: 1.2em 0.2em;
+
+  animation: zoom-in 0.3s ease 0s 1 normal forwards;
+}
+
+footer li:hover {
+  animation: zoom-out 0.3s ease 0s 1 normal forwards;
+}
+
+footer a:hover {
+  transition: 0.2s;
+  color: #ff7f00;
+}
+
+.credit {
+  position: relative;
+  margin-top: -4.8em;
+  text-align: center;
+  font-size: 2em;
+  z-index: 3;
+  min-width: 1650px;
+}
+
+.credit span {
+  font-size: 1.2em;
+  color: #ff7f00;
+}
