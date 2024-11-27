@@ -29,13 +29,13 @@ const Footer = () => {
         <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
             <ul>
-                <li>+91-222-345-7880</li>
-                <li>contact@fooDelivery.com</li>
+                <li>+91 8982148801</li>
+                <li>fooDelicious@gmail.com</li>
             </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 © fooDelivery.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 © fooDelicious.com - All Right Reserved.</p>
     </div>
   )
 }
