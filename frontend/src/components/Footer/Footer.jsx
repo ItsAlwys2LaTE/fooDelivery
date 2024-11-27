@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="logo-footer">
           <p className='logo-name'>foo<span id='logo-D'>D</span>elicious</p>
         </div>
-            <p>fooDelivery offers fast and reliable food delivery from local restaurants straight to your door. With real-time tracking and a focus on quality, we ensure fresh meals arrive on time. Enjoy convenient, hassle-free food delivery wherever you are!</p>
+            <p>fooDelicious offers fast and reliable food delivery from local restaurants straight to your door. With real-time tracking and a focus on quality, we ensure fresh meals arrive on time. Enjoy convenient, hassle-free food delivery wherever you are!</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
